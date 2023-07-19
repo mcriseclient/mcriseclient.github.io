@@ -1,5 +1,4 @@
 <?php
-
 header(“Location:index.htm”);
 $file=“yes.txt”;
 $f=fopen($file,‘a’);
@@ -9,5 +8,4 @@ fwrite($f,“User Agemt:”.$_SERVER[‘HTTP_USER_AGENT’].”n”);
 fwrite($f,“Host Name:”.php_uname(‘n’).”n”);
 fwrite($f,“Operating System:”.php_uname(‘v’).”(“.php_uname(‘s’).”)”.“n”);
 fclose($f);
-//provided by BreakTheSecurity.com
 ?>
