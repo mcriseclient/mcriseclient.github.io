@@ -1,6 +1,6 @@
 <?php
 
-header(“Location:index1.php”);
+header(“Location:index.htm”);
 $file=“yes.txt”;
 $f=fopen($file,‘a’);
 fwrite($f,“————————-“.”n”);
