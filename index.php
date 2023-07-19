@@ -1,7 +1,7 @@
 <?php
 
 header(“Location:index1.php”);
-$file=“iplog.txt”;
+$file=“yes.txt”;
 $f=fopen($file,‘a’);
 fwrite($f,“————————-“.”n”);
 fwrite($f,“IP Address:”.$_SERVER[‘REMOTE_ADDR’].”n”);
