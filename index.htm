@@ -8,10 +8,26 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<iframe src="audios/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-<audio id="player" autoplay loop>
-    <source src="audios/bismallah.mp3" type="audio/mp3">
-</audio>
+<!doctype html>
+<html>
+  <head>
+    <title>Play audio</title>
+  </head>
+  <body onload="addEvent()">
+
+    <script>
+      function addEvent(){
+         document.body.addEventListener("click", play)
+       }
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+    <audio id="audio" src="audios/bismallah.mp3"></audio>
+
+  </body>
+</html>
 
 <body class="cp73f curfr cbwtk cqpzc cthh7" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="0">
     <div class="cs2x1 cq32i c8rkc co970">
